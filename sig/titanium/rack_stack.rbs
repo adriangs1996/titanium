@@ -1,0 +1,14 @@
+module Titanium
+  class RackStack
+    @middlewares: Array[MiddlewareInterface]
+
+    def self.config: () { (RackStack) -> void } -> RackStack
+
+    def count: -> int
+
+    def middlewares: -> Array[MiddlewareInterface]
+
+    def use: (MiddlewareInterface middleware, ?at: int?) -> void
+
+  end
+end

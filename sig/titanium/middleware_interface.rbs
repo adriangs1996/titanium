@@ -1,0 +1,5 @@
+module Titanium
+  class MiddlewareInterface
+    def call: (Rack::Request request) -> Rack::Response
+  end
+end
